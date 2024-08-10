@@ -265,7 +265,7 @@ async def start(client:Client, message):
             ],[
                 InlineKeyboardButton('🎗️ ʙᴜʏ ᴘʀᴇᴍɪᴜᴍ', callback_data='premium'),
             ],[
-                InlineKeyboardButton(text="ʜᴏᴡ ᴛᴏ Buy❓", url="@Lordsakunaa"),
+                InlineKeyboardButton(text="ʜᴏᴡ ᴛᴏ Buy❓", url="https://telegram.me/Lordsakunaa"),
             ]]
             reply_markup=InlineKeyboardMarkup(buttons)
             if await db.user_verified(user_id): 
