@@ -259,13 +259,13 @@ async def start(client:Client, message):
             temp.CHAT[user_id] = grp_id
             verify = await get_shortlink(f"https://telegram.me/{temp.U_NAME}?start=notcopy_{user_id}_{verify_id}_{file_id}", grp_id, is_second_shortener, is_third_shortener , pm_mode=pm_mode)
             buttons = [[
-                InlineKeyboardButton(text="♻️ ᴠᴇʀɪғʏ 🎭", url=verify)
+                InlineKeyboardButton(text="♻️ ғʀᴇᴇ ᴘᴏɪɴᴛs 🎭", url=verify)
             ],[
-                InlineKeyboardButton(text="ʜᴏᴡ ᴛᴏ ᴠᴇʀɪғʏ ❓", url=settings['tutorial']),
+                InlineKeyboardButton(text="ʜᴏᴡ ᴛᴏ ᴇᴀʀɴ ғʀᴇᴇ ❓", url=settings['tutorial']),
             ],[
-                InlineKeyboardButton('🎗️ ʙᴜʏ ᴘʀᴇᴍɪᴜᴍ', callback_data='premium'),
+                InlineKeyboardButton('🎗️ ʙᴜʏ ᴘᴏɪɴᴛs 🎗️', callback_data='premium'),
             ],[
-                InlineKeyboardButton(text="ʜᴏᴡ ᴛᴏ Buy❓", url=settings['tutorial']),
+                InlineKeyboardButton(text="ʜᴏᴡ ᴛᴏ ʙᴜʏ❓", url=f"https://telegram.me/Lordsakunaa"),
             ]]
             reply_markup=InlineKeyboardMarkup(buttons)
             if await db.user_verified(user_id): 
